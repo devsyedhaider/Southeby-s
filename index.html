@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title -->
+    <title>370 & 372 Further Lane</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+
+    <nav>
+      <!-- Cookie Notice -->
+      <div class="cookie-notice" id="cookieNotice">
+        <div class="row">
+          By using this site, you agree with our use of cookies.
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="row">
+          <button class="btn-ok" id="btnOk">OK</button>
+          <button class="btn-manage">Manage Preferences</button>
+        </div>
+      </div>
+
+      <!-- banner Navbar -->
+      <div class="banner-navbar">
+        <div class="banner row">
+          <a href="#" class="nav-link">Join / Log In</a>
+          <a href="#" class="nav-link flex"
+            ><ion-icon name="settings-outline" class="icon"></ion-icon>
+            Preferences</a
+          >
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="row">
+          <img src="./assets/imagereader.svg" alt="Logo" class="logo" />
+        </div>
+
+        <div class="sub-navbar row">
+          <a href="#" class="sub-nav-link flex-row" id="searchLink">
+            <ion-icon name="search-outline" class="icon"></ion-icon> SEARCH
+          </a>
+          <a href="#" class="sub-nav-link" id="PropertiesLink">PROPERTIES</a>
+          <a href="#" class="sub-nav-link" id="AgentsLink">AGENTS</a>
+          <a href="#" class="sub-nav-link" id="StoryLink">STORIES</a>
+          <a href="#" class="btn-sell">SELL WITH US</a>
+        </div>
+      </div>
+
+      <!-- Search Dropdown -->
+
+      <div class="search-dropdown hidden" id="searchDropdown">
+        <div class="search-container">
+          <div class="close">
+            <ion-icon
+              name="close-outline"
+              id="closeSearch"
+              class="closeicon"
+            ></ion-icon>
+          </div>
+
+          <div class="search-header">
+            <span class="search-link">BUY</span>
+            <span class="search-link">RENT</span>
+            <span class="search-link">SELL</span>
+            <span class="search-link">AGENTS</span>
+            <span class="search-link">BLOGS</span>
+          </div>
+          <div class="search-body">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <input
+              type="text"
+              placeholder="Country, City, Address, Postal Code or ID"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Properties Dropdown -->
+
+      <div class="Properties-dropDown hidden" id="PropertiesDropDown">
+        <div class="Properties-container">
+          <div class="close">
+            <ion-icon
+              name="close-outline"
+              id="closeProperties"
+              class="closeicon"
+            ></ion-icon>
+          </div>
+
+          <div class="Properties_lists">
+            <div class="Properties_list">
+              <h3>Local</h3>
+              <ul>
+                <li><a href="#">Properties Near Me</a></li>
+              </ul>
+            </div>
+            <div class="Properties_list">
+              <h3>Worldwide</h3>
+              <ul>
+                <li><a href="#">View Properties Globally</a></li>
+                <li><a href="#">Properties by Lifestyle</a></li>
+                <li><a href="#">Properties by Destination</a></li>
+                <li><a href="#">Properties with Videos</a></li>
+                <li><a href="#">Properties with Virtual Reality</a></li>
+              </ul>
+            </div>
+            <div class="Properties_list">
+              <h3>Popular Cities</h3>
+              <ul>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Los Angeles</a></li>
+                <li><a href="#">The Hamptons</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Dubai</a></li>
+                <li><a href="#">Paris</a></li>
+              </ul>
+            </div>
+            <div class="Properties_list">
+              <h3>New Developments</h3>
+              <ul>
+                <li><a href="#">Discover Projects</a></li>
+                <li><a href="#">Contact the Team</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agents Dropdown -->
+
+      <div class="Agents-dropDown hidden" id="AgentsDropDown">
+        <div class="Agents">
+          <div class="close">
+            <ion-icon
+              name="close-outline"
+              id="closeAgents"
+              class="closeicon"
+            ></ion-icon>
+          </div>
+
+          <div class="Agents-lists">
+            <div class="Agents-list">
+              <h3>Local</h3>
+              <ul>
+                <li><a href="#">Your Local Agents</a></li>
+                <li><a href="#">Your Local Offices</a></li>
+              </ul>
+            </div>
+            <div class="Agents-list">
+              <h3>Worldwide</h3>
+              <ul>
+                <li><a href="#">Search Agents Globally </a></li>
+                <li><a href="#">Search Offices Globally</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stories Dropdown -->
+
+      <div class="Stories-dropDown hidden" id="StoryDropDown">
+        <div class="Stories">
+          <div class="close">
+            <ion-icon
+              name="close-outline"
+              id="closeStory"
+              class="closeicon"
+            ></ion-icon>
+          </div>
+
+          <div class="Stories_main">
+            <div class="Stories_Explore">
+              <h3>Explore</h3>
+              <ul>
+                <li>
+                  <a href="#">Luxury Outlook</a>
+                  <a href="#">Blogs</a>
+                  <a href="#">Videos</a>
+                  <a href="#">Reside</a>
+                  <a href="#">Press</a>
+                </li>
+              </ul>
+            </div>
+            <div class="Stories_Reside">
+              <h4>LATEST IN RESIDE</h4>
+              <div class="Stories_lists">
+                <div class="Story_list">
+                  <img
+                    src="./assets/story/imagereader-1.webp"
+                    alt="imagereader"
+                  />
+                  <h2>Luxury Outlook</h2>
+                  <p>
+                    An ambitious exploration into <br />
+                    high-end residential markets <br />
+                    across the globe.
+                  </p>
+                  <a href="#" class="button">EXPLORE MORE </a>
+                </div>
+                <div class="Story_list">
+                  <img
+                    src="./assets/story/imagereader-2.webp"
+                    alt="imagereader"
+                  />
+                  <h2>RESIDE Magazine</h2>
+                  <p>
+                    Conceived in the belief that <br />
+                    home and living in full are <br />
+                    inextricably entwined.
+                  </p>
+                  <a href="#" class="button">EXPLORE MORE </a>
+                </div>
+                <div class="Story_list">
+                  <img
+                    src="./assets/story/imagereader-3.webp"
+                    alt="imagereader"
+                  />
+                  <h2>
+                    What’s New in Art, <br />
+                    Architecture & Design
+                  </h2>
+                  <p>
+                    Contemporary landscapes, party <br />
+                    barns, and bespoke home cocktail <br />
+                    bars are all the rage.
+                  </p>
+                  <a href="#" class="button">EXPLORE MORE </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+  </body>
+</html>

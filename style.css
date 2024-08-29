@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------- Reusable Nav Bar ----------------------------- */
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-row .icon {
+  font-size: 1.2rem;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.closeicon {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* ----------------------------- body ----------------------------- */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ---------------------------- Row -------------------------------- */
+
+.row {
+  padding: 0 3rem;
+}
+
+/* ---------------------------- Nav Bar ---------------------------- */
+
+/*-------------- Cookie Notice ----------------*/
+
+.cookie-notice {
+  background-color: #002349;
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d7b740;
+}
+
+.cookie-notice a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.cookie-notice button {
+  border: 1px solid #d7b740;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-ok {
+  margin-right: 10px;
+}
+
+.btn-manage {
+  padding: 5px 15px;
+}
+
+/* ---------------------- banner Navbar ---------------------- */
+
+.banner-navbar {
+  background-color: #001731;
+  padding: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner {
+  display: flex;
+  gap: 1rem;
+}
+
+.banner .nav-link {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* -------------------- Navbar --------------------*/
+
+.navbar {
+  background-color: #002349;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand-text {
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.brand-subtext {
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.navbar-right .nav-link {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-right .nav-link:hover {
+  text-decoration: underline;
+}
+
+.sub-navbar {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+
+.sub-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.sub-nav-link:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 48px;
+  background-color: #d7b740;
+}
+
+.btn-sell {
+  border: 1px solid #d7b740;
+  padding: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  min-width: 150px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-sell:hover {
+  color: #ccc;
+}
+
+.search-icon {
+  margin-right: 5px;
+}
+
+/* ---------------------------- Search Dropdown ---------------------------- */
+
+.search-dropdown {
+  width: 48%;
+  background-color: #002349;
+  color: #ffffff;
+  padding: 30px 40px;
+  float: right;
+}
+
+.search-container {
+  transition: all 0.4s ease-in;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-header {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-link {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 10px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.search-link:hover::after {
+  content: "";
+  display: block;
+  height: 3px;
+  top: 1.2rem;
+  width: 70%;
+  position: absolute;
+  background-color: #d7b740;
+}
+
+.search-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #001731;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.search-body input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.search-body ion-icon {
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+/* ---------------------------- PROPERTIES Dropdown ---------------------------- */
+
+.Properties-dropDown {
+  width: 70%;
+  background-color: #002349;
+  color: #ffffff;
+  padding: 30px 5rem;
+  float: right;
+}
+
+.Agents-lists,
+.Properties_lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Agents-list h3,
+.Properties_list h3 {
+  color: #7c7277;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.Agents-list ul,
+.Properties_list ul {
+  list-style: none;
+}
+
+.Agents-list ul li,
+.Properties_list ul li {
+  margin-bottom: 1.5rem;
+}
+
+.Agents-list ul li a,
+.Properties_list ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.Properties_list ul li a:hover {
+  color: #757474;
+}
+
+/* ---------------------------- Agents Dropdown ---------------------------- */
+
+.Agents-dropDown {
+  width: 40%;
+  background-color: #002349;
+  color: #ffffff;
+  padding: 30px 5rem;
+  float: right;
+}
+
+/* ---------------------------- Stories Dropdown ---------------------------- */
+
+.Stories-dropDown {
+  width: 75%;
+  background-color: #002349;
+  color: #ffffff;
+  padding: 30px 60px 70px 110px;
+  float: right;
+}
+
+.Stories_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Stories_main h3 {
+  color: #7c7277;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.Stories_main h4 {
+  color: #7c7277;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.Stories_Explore ul li  {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Stories_Explore ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .98rem;
+  transition: all .3s;
+}
+
+.Stories_Explore ul li a:hover {
+  color: #7c7277;
+}
+
+.Stories_lists {
+  display: flex;
+  gap: 3rem;
+}
+
+.Story_list h2 ,
+.Story_list p ,
+.Story_list img {
+  margin-bottom: 1rem;
+}
+
+.Story_list h2 {
+  font-size: 1.2rem;
+}
+
+.Story_list p {
+  font-size: .9rem;
+  color: #9e9c9c;
+  margin-bottom: 2rem;
+}
+
+.Story_list .button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* ----------------------------------- header --------------------------------------- */
